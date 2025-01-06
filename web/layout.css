@@ -1,0 +1,165 @@
+/* Global styles */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    outline: none;
+}
+
+a, a:active, a:focus {
+    color: #333;
+    text-decoration: none;
+    transition-timing-function: ease-in-out;
+    transition-duration: .2s;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+span, a, a:hover {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header section */
+.whyus-header-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.whyus-header-section h4 {
+    position: relative;
+    padding: 0;
+    color: rgb(135, 106, 255);
+    line-height: 1;
+    letter-spacing: 0.3px;
+    font-size: 34px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: none;
+    margin-bottom: 30px;
+}
+
+.whyus-header-section h4:before {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: rgb(135, 106, 255);
+    position: absolute;
+    left: 0px;
+    bottom: -10px;
+    right: 0;
+    margin: 0 auto;
+}
+
+.whyus-header-section h4 span {
+    font-weight: 700;
+    padding-bottom: 5px;
+    color: #2f2f2f;
+}
+
+/* Feature items */
+.whyus-content-container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.whyus-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.whyus-col-lg-4 {
+    width: calc(33.333% - 20px);
+    margin: 10px;
+}
+
+.whyus-feature-item {
+    background: #fff;
+    text-align: center;
+    padding: 30px 25px;
+    box-shadow: 0 0px 25px rgba(0, 0, 0, 0.07);
+    border-radius: 20px;
+    border: 5px solid rgba(0, 0, 0, 0.07);
+    margin-bottom: 30px;
+    transition: all 0.5s ease;
+    display: flex;
+    align-items: center;
+}
+
+.whyus-feature-item:hover {
+    background: rgb(240, 248, 255);
+    box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.2);
+    color: black;
+}
+
+.whyus-icon {
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.whyus-icon img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.whyus-text {
+    flex: 1;
+    text-align: left;
+}
+
+.whyus-feature-item p {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.whyus-feature-item h6 {
+    margin-bottom: 20px;
+    color: #2f2f2f;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+@media (min-width: 992px) {
+    .whyus-col-lg-4 {
+        width: calc(33.333% - 20px);
+        margin: 10px;
+    }
+
+    .whyus-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .whyus-content-container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
